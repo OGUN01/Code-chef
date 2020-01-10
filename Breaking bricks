@@ -1,0 +1,14 @@
+# cook your dish here
+t=int(input())
+while t!=0:
+    ls=list(map(int,input().split()))
+    if (ls[1]==ls[2]==ls[3]) and (ls[0]==ls[1]):
+        print(3)
+    elif ((sum(ls)-ls[0])<=ls[0]):
+        print(1)
+    elif ((ls[0]>=ls[1]+ls[2]) or (ls[0]>=ls[3]+ls[2])):
+        print(2)
+    else:
+        print(3)
+    t-=1
+        
